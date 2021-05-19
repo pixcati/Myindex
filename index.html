@@ -5,13 +5,15 @@
 		<meta charset="utf-8">
 		<title>Pixcat 's Home</title>
 		<meta name="Keywords" content="pixcat.Pixcat,pixcati"/>
-		<meta name="Description" content="Pixcat 's index"/>
+		<meta name="Description" content="Pixcat的"/>
+		<link rel="icon" href="favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sentsin/layui@master/dist/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
 		<script src="https://cdn.jsdelivr.net/gh/sentsin/layui@master/dist/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <!-- 		<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://cdn.jsdelivr.net/gh/pixcati/vidbg@1.1.1/dist/vidbg.js" type="text/javascript" charset="utf-8"></script> -->
+
 
 		<style type="text/css">
 			
@@ -121,7 +123,6 @@
 				text-align: center;
 				color: #fffeff;
 				font-weight: 300;
-				font-size: 6em;
 				white-space: nowrap;
 				display: none;
 			}
@@ -132,10 +133,11 @@
 				width: 150px;
 				border-radius: 100%;
 				border: 5px solid #eee;
+				transition: all 0.8s;
 				}
 			
 			#顶部 .show .头像:hover {
-				border-radius: 1%;
+				transform: rotate(360deg);
 			}
 
 			#顶部 .show .个签 {
@@ -169,7 +171,8 @@
 			#btn ul li {
 				margin-right: 1px;
 				font-size: 20px;
-				padding: 6px 13px;
+				text-align: center;
+				padding: 6px 12px;
 				border-radius: 100%;
 				background-color: rgba(255, 255, 255, 0.8);
 				line-height: 32px;
@@ -208,7 +211,7 @@
 				}
 			}
 			
-			@media(max-height: 660px) {
+			@media(max-height: 500px) {
 				#顶部 .下 {
 					display: none;
 			}
@@ -310,7 +313,7 @@
 			}
 			
 			#底部  #row {
-				padding: 50px 0;
+				padding: 80px 0;
 			}
 			
 			#底部 .links {
@@ -334,7 +337,7 @@
 
 	<body>
 		<div id="顶部">
-<!-- 		<div id="顶部" data-vidbg-bg="webm: http://vce.kuaiyunds.com/vce/moe.webm" data-vidbg-options="loop: false, muted: false, overlay: true, overlayAlpha: 0.0 "> -->
+		<!-- <div id="顶部" data-vidbg-bg="webm: http://vce.kuaiyunds.com/vce/moe.webm" data-vidbg-options="loop: false, muted: true, overlay: true, overlayAlpha: 0.0 "> -->
 		
 			<div class="logo">Pixcat 's Home</div>
 			<ul>
