@@ -5,35 +5,57 @@
 		<meta charset="utf-8">
 		<title>Pixcat 's Home</title>
 		<meta name="Keywords" content="pixcat.Pixcat,pixcati"/>
-		<meta name="Description" content="Pixcat的"/>
+		<meta name="Description" content="Pixcat的主页"/>
 		<link rel="icon" href="favicon.ico" />
+		
+       <script src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/pace.min.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/pace.css">
+	
+		
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sentsin/layui@master/dist/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
 		<script src="https://cdn.jsdelivr.net/gh/sentsin/layui@master/dist/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<!-- 		<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="https://cdn.jsdelivr.net/gh/pixcati/vidbg@1.1.1/dist/vidbg.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.jsdelivr.net/gh/pixcati/vidbg@1.1.1/dist/vidbg.js" type="text/javascript" charset="utf-8"></script>
 
 
 		<style type="text/css">
-			
-			* {
-				transition: all 1.2s;
-				list-style: none;
-			}
-			
 			
 			body,
 			html {
 				color: #222;
 				background-color: #eee;
 				font: BlinkMacSystemFont,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",sans-serif;
-}
+		}
 
 
-		 .layui-container > .layui-row {
+		#遮罩 {
+				padding: 0px;
+				margin: 0px;
+				top: -10%;
+				left: -10%;
+				width: 150%;
+				height: 150%;
+				position: fixed;
+				display: inline-block;
+				background-color: #fff;
+				z-index: 100;
+			}
+
+		 .layui-container .layui-row {
 				padding: 30px 0;
 			}
+			
+
+			.pace .pace-activity {
+				background: rgb(33, 150, 243) !important;
+			}
+			.pace .pace-progress {
+				background: rgb(33, 150, 243) !important;
+				color: rgb(51, 51, 51) !important;
+			}
+
 
 			#顶部 {
 				position: relative;
@@ -44,6 +66,7 @@
 				background-size: cover;
 				background-attachment: fixed;
 				-webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+				transition: all 1.2s;
 				overflow: hidden;
 			}
 
@@ -82,11 +105,6 @@
 				background-color: rgba(238, 238, 238, 0.1);
 			}
 			
-			#顶部 .jinrishici-sentence:hover {
-				color: #222;
-				background-color: rgba(238, 238, 238, 1.0);
-			}
-
 
 			#顶部 .右 {
 				position: absolute;
@@ -171,7 +189,6 @@
 			#btn ul li {
 				margin-right: 1px;
 				font-size: 20px;
-				text-align: center;
 				padding: 6px 12px;
 				border-radius: 100%;
 				background-color: rgba(255, 255, 255, 0.8);
@@ -317,25 +334,25 @@
 			}
 			
 			#底部 .links {
-				color: #333;
+				color: #303030;
 				text-align: center;
 				font-size: 18px;
 			}
 			
 			#底部 a {
 				margin-right: 3px;
-				color: #333;
-				font-weight: 600;
+				color: #262626;
+				font-weight: 500;
 			}
 			
 			
 
-			
 		</style>
 
 	</head>
 
 	<body>
+		<div id="遮罩" ></div>
 		<div id="顶部">
 		<!-- <div id="顶部" data-vidbg-bg="webm: http://vce.kuaiyunds.com/vce/moe.webm" data-vidbg-options="loop: false, muted: true, overlay: true, overlayAlpha: 0.0 "> -->
 		
@@ -349,7 +366,7 @@
 					<a href="tencent://message/?uin=859175486">
 						<li><i class="fa fa-qq"></i>找我</li>
 					</a>
-					<a onclick="layer.msg('内容准备中' );">
+					<a onclick="layer.msg('待补充吖' );">
 						<li><i class="fa fa-info-circle"></i>关于</li>
 					</a>
 				</div>
@@ -413,9 +430,11 @@
 		<div id="底部">
 				<div id="row">
 					<div class="links">
-						<a href="http://oking.top/" target="_blank">我的收藏</a>
-						<a href="http://i.svvme.com/" target="_blank">我的分享</a>
-						<a href="http://pan.svvme.com/" target="_blank">我的网盘</a>
+						<a href="https://blog.svvne.com" target="_blank">博客</a>
+						|
+						<a href="./index_bak.html" target="_blank">旧版</a>
+						|
+						<a href="mailto:859175486@qq.com" target="_blank">联系</a>
 						<br>
 						Made with ❤ by 
 						<a href="https://github.com/pixcati/Myindex" title="Backup" target="_blank">Pixcat</a>
@@ -423,8 +442,7 @@
 					</div>
 					
 					</div>
-									
-					        
+
 				</div>
 
 
@@ -433,10 +451,20 @@
 		<script src="https://cdn.jsdelivr.net/gh/MoePlayer/APlayer@v1.10.1/dist/APlayer.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
-		<meting-js auto="https://music.163.com/#/my/m/music/playlist?id=82788268" mini="true" fixed="true" autoplay="false"></meting-js>
+		<meting-js server="netease" type="playlist" id="82788268" mini="true" fixed="true" autoplay="false"></meting-js>
 		<!-- 点击特效 -->
 		<script src="https://cdn.jsdelivr.net/gh/pixcati/hexo@main/cdn/js/texiao01.js" type="text/javascript" charset="utf-8"></script>
-
-
+		
+		<script type="text/javascript">
+			if(typeof Pace != 'undefined'){
+				Pace.on('hide', function(){
+					$("#遮罩").fadeOut(500,function(){
+						$(this).remove();
+					});
+				});
+}
+		</script>
+		
+		
 	</body>
 </html>
