@@ -3,7 +3,6 @@
 ![截图][1]
 ## 浏览
 [https://www.svvme.com][2]
-
 [https://www.svvme.com/index_vid.html   （加入视频背景）  ][3]
 
 ## 关于
@@ -22,9 +21,17 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="https://cdn.jsdelivr.net/gh/pixcati/vidbg@1.1.1/dist/vidbg.js" type="text/javascript" charset="utf-8"></script>
 
+<div class="样式" data-vidbg-bg="mp4: 视频地址, 
+                 webm: 视频地址"
+  data-vidbg-options="loop: false, muted: false, overlay: true, overlayAlpha: 0.0 ">
+
+</div>
+
 
 ```
 
+#### 播放器
+[Aplayer][4] | [MetingJS][5]
 
 
 #### 点击特效
@@ -169,3 +176,5 @@ clickEffect();
   [1]: https://s3.jpg.cm/2021/05/20/OCq65.jpg
   [2]: https://www.svvme.com/
   [3]: https://www.svvme.com/index_vid.html
+  [4]: https://aplayer.js.org/
+  [5]: https://github.com/metowolf/MetingJS
