@@ -353,8 +353,9 @@
 
 	<body>
 		<div id="遮罩" ></div>
+
 		<div id="顶部">
-		<!-- <div id="顶部" data-vidbg-bg="webm: http://vce.kuaiyunds.com/vce/moe.webm" data-vidbg-options="loop: false, muted: true, overlay: true, overlayAlpha: 0.0 "> -->
+		<!-- <div id="顶部" data-vidbg-bg="mp4: https://disc.stdcdn.com/solo.mp4, webm: https://disc.stdcdn.com/moe.webm" data-vidbg-options="loop: false, muted: false, overlay: true, overlayAlpha: 0.0 "> -->
 		
 			<div class="logo">Pixcat 's Home</div>
 			<ul>
@@ -389,7 +390,7 @@
 						<a href="https://wpa.qq.com/msgrd?v=3&uin=859175486&site=qq&menu=yes" target="_blank">
 							<li><i class="fa fa-qq" style="color: #ff80ab;"></i></li>
 						</a>
-						<a href="#" target="_blank">
+						<a onclick="" id="wechat">
 							<li><i class="fa fa-wechat" style="color: #4caf50;"></i></li>
 						</a>
 						<a href="https://t.me/ra2041" target="_blank">
@@ -432,8 +433,6 @@
 					<div class="links">
 						<a href="https://blog.svvne.com" target="_blank">博客</a>
 						|
-						<a href="./index_bak.html" target="_blank">旧版</a>
-						|
 						<a href="mailto:859175486@qq.com" target="_blank">联系</a>
 						<br>
 						Made with ❤ by 
@@ -456,6 +455,7 @@
 		<script src="https://cdn.jsdelivr.net/gh/pixcati/hexo@main/cdn/js/texiao01.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script type="text/javascript">
+			// 移除遮罩
 			if(typeof Pace != 'undefined'){
 				Pace.on('hide', function(){
 					$("#遮罩").fadeOut(500,function(){
@@ -463,6 +463,20 @@
 					});
 				});
 }
+
+
+		 $('#wechat').on('click', function(){
+			 // layer弹出层
+			layer.open({
+			  type: 2,
+			  title: '找我',
+			  shadeClose: true,
+			  shade: false,
+			  maxmin: true, 
+			  area: ['50%', '50%'],
+			  content: './404.hml'
+			});
+		  });
 		</script>
 		
 		
