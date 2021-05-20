@@ -1,6 +1,9 @@
 
 # 🌈 一个简易的个人主页、引导页
-
+![截图][1]
+## 浏览
+[https://www.svvme.com][2]
+[https://www.svvme.com/index_vid.html   （加入视频背景）  ][3]
 
 ## 关于
 一个简易的个人主页，样式仿 [iro 主题](https://iro.tw/)。
@@ -162,3 +165,6 @@ clickEffect();
 ```
 
 
+  [1]: https://s3.jpg.cm/2021/05/20/OCq65.jpg
+  [2]: https://www.svvme.com/
+  [3]: https://www.svvme.com/index_vid.html
