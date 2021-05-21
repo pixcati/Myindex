@@ -57,6 +57,9 @@
 
 ```
 
+#### 今日诗词API
+[官网](https://www.jinrishici.com/)  | [API](https://www.jinrishici.com/doc/#json-fast)
+
 
 #### 背景视频
  [笔记](https://github.com/pixcati/vidbg/blob/master/README.md) | [Github](https://github.com/blakewilson/vidbg)
