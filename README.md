@@ -76,7 +76,7 @@
 ```
 
 #### 播放器
-[Aplayer][4] | [MetingJS][5]
+[笔记](https://github.com/pixcati/MetingJS) | [Aplayer][4] | [MetingJS][5]
 
 
 #### 点击特效
