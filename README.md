@@ -18,11 +18,53 @@
 #### 轻雨图标包
 [APK](https://www.coolapk.com/apk/me.morirain.dev.iconpack.pure) |  [iCO](http://pan.svvme.com/download/60a62c23d57eff002b354d03)  | [PNG](http://pan.svvme.com/download/60a62c23d57eff002b354d02)
 
-#### 背景视频
-##### [笔记](https://github.com/pixcati/vidbg/blob/master/README.md)
+
+#### PACE加载特效
+[Demo](https://codebyzach.github.io/pace/) | [Github](https://github.com/CodeByZach/pace)
 ```
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://cdn.jsdelivr.net/gh/pixcati/vidbg@1.1.1/dist/vidbg.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/pace.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/pace.css">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript"></script>
+
+
+<style type="text/css">
+#遮罩 {
+	padding: 0px;
+	margin: 0px;
+	top: -10%;
+	left: -10%;
+	width: 150%;
+	height: 150%;
+	position: fixed;
+	display: inline-block;
+	background-color: #fff;
+	z-index: 100;
+}
+</style>
+
+<script type="text/javascript">
+			// PACE载完移除遮罩
+			if(typeof Pace != 'undefined'){
+				Pace.on('hide', function(){
+					$("#遮罩").fadeOut(500,function(){
+						$(this).remove();
+					});
+				});
+}
+</script>
+
+
+```
+
+
+#### 背景视频
+ [笔记](https://github.com/pixcati/vidbg/blob/master/README.md) | [Github](https://github.com/blakewilson/vidbg)
+```
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/pixcati/vidbg@1.1.1/dist/vidbg.js" type="text/javascript"></script>
+
+
 
 <div class="样式" data-vidbg-bg="mp4: 视频地址, 
                  webm: 视频地址"
@@ -39,6 +81,7 @@
 
 #### 点击特效
 ```
+<script type="text/javascript">
 function clickEffect() {
 let balls = [];
 let longPressed = false;
@@ -172,6 +215,7 @@ balls.splice(i, 1);
 }
 }
 clickEffect();
+</script>
 
 ```
 
