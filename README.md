@@ -61,6 +61,9 @@
 [官网](https://www.jinrishici.com/)  | [API](https://www.jinrishici.com/doc/#json-fast)
 
 
+#### Layui / Layer弹出层
+[官网](https://www.layui.com/) | [Layer](https://layer.layui.com/)
+
 #### 背景视频
  [笔记](https://github.com/pixcati/vidbg/blob/master/README.md) | [Github](https://github.com/blakewilson/vidbg)
 ```
@@ -79,7 +82,7 @@
 ```
 
 #### 播放器
-[笔记](https://github.com/pixcati/MetingJS) | [Aplayer][4] | [MetingJS][5]
+[笔记](https://github.com/pixcati/MetingJS) | [Aplayer][5] | [MetingJS][6]
 
 
 #### 点击特效
@@ -226,5 +229,6 @@ clickEffect();
   [1]: https://s3.jpg.cm/2021/05/20/OCq65.jpg
   [2]: https://www.svvme.com/
   [3]: https://www.svvme.com/index_vid.html
-  [4]: https://aplayer.js.org/
-  [5]: https://github.com/metowolf/MetingJS
+  [4]: https://www.layui.com/
+  [5]: https://aplayer.js.org/
+  [6]: https://github.com/metowolf/MetingJS
