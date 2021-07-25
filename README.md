@@ -1,14 +1,18 @@
 
-<h2 align="center">🌈 一个清新、简易的个人引导页</h2>
+<h2 align="center">一个清新、简易的个人引导页</h2>
 <hr>
 
 ![截图][1]
 ## 浏览
+
+<h3 style="color:#5b94b1">仍在继续完善中，新的版本还未放上来，但在浏览中已经使用</h3>
+
 [https://www.svvme.com][2]
 <br>
 [https://www.svvme.com/index_vid.html][3] （加入视频背景,部分浏览器不可用）  
 
 ## 关于
+
 一个简易的个人主页，样式仿 [iro 主题](https://iro.tw/)。
 
 
@@ -265,7 +269,7 @@ clickEffect();
 ```
 
 
-  [1]: https://s3.jpg.cm/2021/06/29/IWp97T.jpg
+  [1]: https://s3.jpg.cm/2021/07/25/I6uaZ2.jpg
   [2]: https://www.svvme.com/
   [3]: https://www.svvme.com/index_vid.html
   [4]: https://www.layui.com/
