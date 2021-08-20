@@ -1,0 +1,323 @@
+			body,html {
+				background-color: #fff;
+				font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+		}
+		
+			body,a,p,li {
+				cursor: url(https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/media/huaji.cur) , auto;
+7		}
+
+
+			#遮罩 {
+				padding: 0;
+				margin: 0;
+				top: -10%;
+				left: -10%;
+				width: 150%;
+				height: 150%;
+				position: fixed;
+				display: inline-block;
+				background-color: #fff;
+				z-index: 100;
+			}
+
+
+			.pace .pace-activity {
+				background: rgb(33, 150, 243) !important;
+			}
+			.pace .pace-progress {
+				background: rgb(33, 150, 243) !important;
+				color: rgb(51, 51, 51) !important;
+			}
+			 .layui-container .layui-row {
+				padding: 30px 0;
+			}
+/* 			.layui-nav-child {
+				top: -200px;
+			} */
+			.layui-icon-down {
+				color: #fff;
+			}
+			.layui-nav .layui-this:after,.layui-nav-bar {
+				display: none;
+			}
+			.aplayer {
+				width:310px;
+			}
+			.aplayer .aplayer-body {
+				width:310px;
+				border-radius:0 3px 3px 0;
+			}
+
+
+						
+
+			#顶部 {
+				position: relative;
+				height: 100vh;
+				width: 100%;
+				/* background: url('https://www.svvme.com/api/bg_pc.php') rgba(108, 192, 237, 1.0); */
+				background: url('https://api.iro.tw/webp_pc.php') rgba(108, 192, 237, 1.0);
+				background-size: cover;
+				background-attachment: fixed;
+				-webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+				transition: all 1.2s;
+				overflow: hidden;
+			}
+			
+			#顶部  .logo {
+				width: 32px;
+				border-radius: 100%;
+			}
+			
+			#顶部  li {
+				margin-left: 10px;
+				float: left;
+			}
+			
+			#顶部 a {
+				font-size: 17px;
+				font-weight: 600;
+				text-decoration: none;
+			}
+			
+						
+			#顶部 .show {
+				position: absolute;
+				top: 30vh;
+				width: 100%;
+				text-align: center;
+			}
+
+			#顶部 .show br {
+				margin-bottom: 10px;
+			}
+
+			#顶部 .show .信息 {
+				color: #fff;
+				font-weight: 300;
+				white-space: nowrap;
+				display: none;
+			}
+
+			#顶部 .show .头像 {
+				display: block;
+				margin: 0 auto;
+				width: 150px;
+				border-radius: 100%;
+				border: 5px solid #fff;
+				transition: all 0.8s;
+			}
+			
+			#顶部 .show .头像:hover {
+				transform: rotate(360deg);
+			}
+
+			#顶部 .show .个签 {
+				margin: 0 auto;
+				line-height: 30px;
+				width: 210px;
+				padding: 12px 30px;
+				border-radius: 140px;
+				background-color: rgba(255, 255, 255, 1.0);
+				white-space: nowrap;
+			}
+
+			#顶部 .show .个签 p {
+				color: #7c7c7c;
+				font-size: 18px;
+				font-weight: 500;
+				overflow: hidden;
+			}
+			
+			#顶部 .show .按钮 {
+				display: inline-block;
+			}
+			
+			#顶部 .show .按钮 li {
+				height: 48px;
+				width: 48px;
+				margin-left: 15px;
+				border-radius: 100%;
+				background-color: rgba(255, 255, 255, 1.0);
+			}
+			
+			#顶部 .show .按钮  i {
+				line-height: 48px;
+				font-size: 20px;
+			}
+
+						
+			#顶部 .bar {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				line-height: 60px;
+				height: 60px;
+				background-color: rgba(0, 0, 0, 0.0);
+			}
+			
+			#顶部 .bar i {
+				margin: 5px;
+				font-size: 18px;
+			} 
+
+
+			#顶部 .左 {
+				position: relative;
+				right: 10px;
+			}
+			
+			#顶部 .右 {
+				position: absolute;
+				right: 25px;
+			}
+			
+			#顶部 #jinrishici-sentence {
+				margin-top: 10px;
+				color: #fff;
+				font-weight: 500;
+				line-height: 30px;
+				font-size: 17px;
+				padding: 2px 20px;
+				border: 1px solid #fff;
+				border-radius: 30px;
+				background-color: rgba(255, 255, 255, 0.0);
+			}
+						
+
+			@media(max-width: 991px) {
+				/* 手机尺寸时 */
+				#顶部 {
+					/* background-image: url('https://www.svvme.com/api/bg_mb.php'); */
+					background-image: url('https://api.iro.tw/webp_mb.php');
+				}
+				
+				#顶部 #jinrishici-sentence {
+					display: none;
+				}
+
+				#顶部 .show {
+					top: 40vh;
+				}
+
+				#顶部 .show .信息 {
+					font-size: 2.5em;
+					display: block;
+				}
+
+				#顶部 .show .个签 {
+					width: 50%;
+				}
+
+				#顶部 .show .头像 {
+					display: none;
+				}
+			}
+			
+
+			.heading {
+				font-weight: 200;
+				position: relative;
+				padding-bottom: 12px;
+				margin-bottom: 1em;
+			}
+
+			.heading:before {
+				content: "";
+				width: 100%;
+				padding: 0 25px;
+				border-bottom: 1px solid #eee;
+				position: absolute;
+				bottom: -1px;
+				left: -25px;
+				box-sizing: unset;
+			}
+
+			.heading:after {
+				transition: all .35s ease-out;
+				content: "";
+				position: absolute;
+				background:#2196f3;
+				width: 1em;
+				height: 5px;
+				bottom: -3px;
+				border-radius: 10px;
+				left: 0;
+				box-shadow:0 2px 12px rgba(19, 91, 145, 0.8);
+			}
+
+			.heading:hover:after {
+				width: 2em;
+			}
+
+			.box {
+				padding: 0 0 7em;
+				text-align: center;
+			}
+
+			.box li {
+				position: relative;
+				display: inline-block;
+				margin: 1em 0;
+				text-align: left;
+			}
+
+			.box a {
+				float: left;
+				padding: 0 1em 0 7em;
+				width: 10em;
+				height: 7em;
+				border-radius: .5em;
+				transition: 3s ease;
+			}
+
+
+			.box li img {
+				position: absolute;
+				top: 1em;
+				left: 1em;
+				width: 5em;
+				height: 5em;
+				border-radius: 9em;
+				background: #eee;
+				box-shadow: 0 .5em 2em #f1f4f7;
+			}
+
+			.box a[href]:hover {
+				background-color: rgba(230,244,250,.5);
+			}
+
+			.box h2 {
+				padding: 2em 1em 1em 0;
+				text-align: center;
+				font-weight: 200;
+				font-size: 3em;
+			}
+
+
+			.box h3 {
+				padding-top: 8px;
+				font-weight: 400;
+				font-size: 1.5em;
+				line-height: 46px;
+			}
+			
+			
+			#底部 {
+				width: 100%;
+				text-align: center;
+			}
+			
+			#底部  #row {
+				padding: 3em 0;
+			}
+			
+			#底部 a {
+				margin: 5px;
+				border-radius: 13px;
+				padding: 5px 10px;
+				font-size: 12px;
+				display: inline-block;
+			}
+			
