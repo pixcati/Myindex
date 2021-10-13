@@ -269,7 +269,7 @@ clickEffect();
 ```
 
 
-  [1]: https://s3.jpg.cm/2021/07/25/I6uaZ2.jpg
+  [1]: https://i.loli.net/2021/10/13/TFEG8bmowt6iQCf.jpg
   [2]: https://www.svvme.com/
   [3]: https://www.svvme.com/index_vid.html
   [4]: https://www.layui.com/
