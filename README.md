@@ -1,5 +1,5 @@
 
-<h2 align="center">一个简易的个人页</h2>
+<h2 align="center">一个简易的个人引导页</h2>
 <hr>
 
 ![截图](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-803e33e7-38ec-4da2-8775-56918cd7c73b/69746f47-c430-4115-98be-315a01199065.png)
