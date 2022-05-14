@@ -2,7 +2,7 @@
 <h2 align="center">一个简易的个人引导页</h2>
 <hr>
 
-![截图](https://s2.loli.net/2022/04/23/4HOgxSJcCU9G3PK.jpg)
+![截图](https://s2.loli.net/2022/05/14/W31TeaJot8QzAUd.jpg)
 ## 浏览
 
 <h3 style="color:#5b94b1">继续完善、学习中。代码尚不规范成熟，仓库里都是黑历史</h3>
