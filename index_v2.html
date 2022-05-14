@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Pixcat 's Home</title>
+		<meta name="Keywords" content="pixcat.Pixcat,pixcati"/>
+		<meta name="Description" content="Pixcat的主页"/>
+		<link rel="icon" href="favicon.ico" />
+		
+      <script src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/pace.min.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/pace.css">
+	
+		
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/layui@2.6.6/dist/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/sentsin/layui@master/dist/layui.js" type="text/javascript" charset="utf-8"></script>
+
+
+		<style type="text/css">
+			body,html {
+				background-color: #fff;
+				font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+		}
+		
+			body,a,p,li {
+				cursor: url(https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/media/huaji.cur) , auto;
+		}
+
+
+		#遮罩 {
+				padding: 0px;
+				margin: 0px;
+				top: -10%;
+				left: -10%;
+				width: 150%;
+				height: 150%;
+				position: fixed;
+				display: inline-block;
+				background-color: #fff;
+				z-index: 100;
+			}
+
+
+			.pace .pace-activity {
+				background: rgb(33, 150, 243) !important;
+			}
+			.pace .pace-progress {
+				background: rgb(33, 150, 243) !important;
+				color: rgb(51, 51, 51) !important;
+			}
+			 .layui-container .layui-row {
+				padding: 30px 0;
+			}
+			.layui-nav-child {
+				top: -200px;
+			}
+			
+
+			#顶部 {
+				position: relative;
+				height: 100vh;
+				width: 100%;
+				background: url('https://www.svvme.com/api/bg_pc.php') rgba(108, 192, 237, 1.0);
+				background-size: cover;
+				background-attachment: fixed;
+				-webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+				transition: all 1.2s;
+				overflow: hidden;
+			}
+			
+			#顶部  li {
+				margin-left: 10px;
+				float: left;
+			}
+			#顶部 a {
+				color: #333;
+				font-size: 17px;
+				font-weight: 600;
+				text-decoration: none;
+			}
+			
+			#顶部  .logo{
+				margin-left: 1em;
+				line-height: 50px;
+				font-size: 22px;
+				font-weight: 500;
+				color: #fff;
+			}
+			
+			
+			#顶部 .show {
+				position: absolute;
+				top: 30vh;
+				width: 100%;
+				text-align: center;
+			}
+
+			#顶部 .show br {
+				margin-bottom: 10px;
+			}
+
+			#顶部 .show .信息 {
+				color: #fff;
+				font-weight: 300;
+				white-space: nowrap;
+				display: none;
+			}
+
+			#顶部 .show .头像 {
+				display: block;
+				margin: 0 auto;
+				width: 150px;
+				border-radius: 100%;
+				border: 5px solid #fff;
+				transition: all 0.8s;
+			}
+			
+			#顶部 .show .头像:hover {
+				transform: rotate(360deg);
+			}
+
+			#顶部 .show .个签 {
+				margin: 0 auto;
+				line-height: 30px;
+				width: 210px;
+				padding: 12px 30px;
+				border-radius: 140px;
+				background-color: rgba(255, 255, 255, 1.0);
+				white-space: nowrap;
+			}
+
+			#顶部 .show .个签 p {
+				color: #7c7c7c;
+				font-size: 18px;
+				font-weight: 500;
+				overflow: hidden;
+			}
+			
+			#顶部 .show .按钮 {
+				display: inline-block;
+			}
+			
+			#顶部 .show .按钮 li {
+				height: 48px;
+				width: 48px;
+				margin-left: 15px;
+				border-radius: 100%;
+				background-color: rgba(255, 255, 255, 1.0);
+			}
+			
+			#顶部 .show .按钮  i {
+				line-height: 48px;
+				font-size: 20px;
+			}
+
+						
+			#顶部 .bar {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				line-height: 60px;
+				height: 60px;
+				background-color: rgba(255, 255, 255, 1.0);
+			}
+			
+			#顶部 .bar i {
+				margin: 5px;
+				font-size: 18px;
+			} 
+
+
+			#顶部 .左下 {
+				position: relative;
+				right: 15px;
+			}
+			
+			#顶部 .右下 {
+				position: absolute;
+				right: 25px;
+			}
+			
+			#顶部 #jinrishici-sentence {
+				margin-top: 10px;
+				color: #333;
+				font-weight: 500;
+				line-height: 30px;
+				font-size: 17px;
+				padding: 2px 20px;
+				border: 1px solid #333;
+				border-radius: 30px;
+				background-color: rgba(51, 51, 51, 0.0);
+			}
+			
+			#顶部 #time{
+				color: #000;
+				font-size: 19px;
+			}
+			
+
+			@media(max-width: 991px) {
+				/* 手机尺寸时 */
+				#顶部 {
+					background-image: url('https://api.iro.tw/webp_mb.php');
+				}
+				
+				#顶部 .logo {
+					font-size: 16px;
+				}
+
+				#顶部 .bar {
+					display: none;
+				}
+				
+				
+
+				#顶部 .show {
+					top: 40vh;
+				}
+
+				#顶部 .show .信息 {
+					font-size: 2.5em;
+					display: block;
+				}
+
+				#顶部 .show .个签 {
+					width: 50%;
+				}
+
+				#顶部 .show .头像 {
+					display: none;
+				}
+			}
+			
+
+			.heading {
+				font-weight: 200;
+				position: relative;
+				padding-bottom: 12px;
+				margin-bottom: 1em;
+			}
+
+			.heading:before {
+				content: "";
+				width: 90%;
+				padding: 0 25px;
+				border-bottom: 1px solid #eee;
+				position: absolute;
+				bottom: -1px;
+				left: -25px;
+				box-sizing: unset;
+			}
+
+			.heading:after {
+				transition: all .35s ease-out;
+				content: "";
+				position: absolute;
+				background: #ff80ab;
+				width: 1em;
+				height: 5px;
+				bottom: -3px;
+				border-radius: 10px;
+				left: 0;
+				box-shadow: 0 2px 12px rgba(171, 86, 116, 0.8);
+			}
+
+			.heading:hover:after {
+				width: 2em;
+			}
+
+			.box {
+				padding: 0 0 7em;
+				text-align: center;
+			}
+
+			.box li {
+				position: relative;
+				display: inline-block;
+				margin: 1em 0;
+				text-align: left;
+			}
+
+			.box a {
+				float: left;
+				padding: 0 1em 0 7em;
+				width: 10em;
+				height: 7em;
+				border-radius: .5em;
+				transition: 3s ease;
+			}
+
+
+			.box li img {
+				position: absolute;
+				top: 1em;
+				left: 1em;
+				width: 5em;
+				height: 5em;
+				border-radius: 9em;
+				background: #eee;
+				box-shadow: 0 .5em 2em #f1f4f7;
+			}
+
+			.box a[href]:hover {
+				background-color: rgba(230,244,250,.5);
+			}
+
+			.box h2 {
+				padding: 2em 1em 1em 0;
+				text-align: center;
+				font-weight: 200;
+				font-size: 3em;
+			}
+
+
+			.box h3 {
+				padding-top: 8px;
+				font-weight: 400;
+				font-size: 1.5em;
+				line-height: 46px;
+			}
+			
+
+			
+			#底部 {
+				width: 100%;
+				text-align: center;
+			}
+			
+			#底部  #row {
+				padding: 1em 0;
+			}
+			
+			#底部  #play {
+				display: block;
+				margin: 0 auto;
+				width: 400px;
+				text-align: left;
+			}
+			
+			
+			#底部 a {
+				margin: 5px;
+				border-radius: 13px;
+				padding: 5px 10px;
+				font-size: 12px;
+				display: inline-block;
+			}
+			
+			
+			
+
+		</style>
+
+	</head>
+
+	<body>
+		<div id="遮罩" ></div>
+		<div id="顶部" data-vidbg-bg="mp4: https://disc.stdcdn.com/badapple.mp4, webm: https://disc.stdcdn.com/moe.webm" data-vidbg-options="loop: false, muted: false, overlay: true, overlayAlpha: 0.0 ">
+		<div class="logo">Pixcat 's Index</div>
+		
+			<div class="show">
+				<div class="信息">Pixcat 's Home</div>
+				<img class="头像" src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/media/head_b.jpg">
+				<br class="br">
+				<div class="个签">
+					<p>Hi! Here is Pixcat.</p>
+				</div>
+				<br class="br">
+				<ul class="按钮">
+						<a href="https://blog.svvme.com/" target="_blank">
+							<li><i class="fa fa-wordpress" style="color: #0d3e63;"></i></li>
+						</a>
+						<a href="https://wpa.qq.com/msgrd?v=3&uin=859175486&site=qq&menu=yes" target="_blank">
+							<li><i class="fa fa-qq" style="color: #ff80ab;"></i></li>
+						</a>
+						<a id="wechat">
+							<li><i class="fa fa-wechat " style="color: #4caf50;"></i></li>
+						</a>
+						<a href="https://js2.svvme.com/https/t.me/ra2041" target="_blank">
+							<li><i class="fa fa-telegram" style="color: #2196f3;"></i></li>
+						</a>
+					</ul>
+				
+			</div>
+			
+		<ul class="bar layui-nav">
+		  <div class="左下">
+		  <li class="layui-nav-item">
+			<a><i class="fa fa-windows" style="font-size: 22px;"></i>&emsp;</a>
+			<dl class="layui-nav-child"> 
+					  <dd><a href="https://blog.svvme.com/" target="_blank"><i class="fa fa-wordpress" style="color: #5e35b1"></i>博客</a></dd>
+					  <dd><a href="tencent://message/?uin=859175486" target="_blank"><i class="fa fa-qq" style="color: #2196f3"></i>找我</a></dd>
+					  <dd><a href="https://js.svvme.com/" target="_blank"><i class="fa fa-paper-plane" style="color: #fb7299"></i>梯子</a></dd>
+					  <dd><a href="https://github.com/pixcati/Myindex" target="_blank"><i class="fa fa-github" style="color: #333"></i>源码</a></dd>
+					  <dd><a onclick="layer.msg('待补充吖' );"><i class="fa fa-info-circle" style="color: #f7cd09"></i>关于</a></dd>
+			</dl>
+		 </li>
+	  </div>
+	  <li id="jinrishici-sentence">诗词加载中...</li>
+	  <li class="layui-nav-item"><a href="https://wpa.qq.com/msgrd?v=3&uin=859175486&site=qq&menu=yes" target="_blank"><img src="https://cdn.jsdelivr.net/gh/pixcati/JSproxy_php@master/assets/ico/qq_6.png" class="layui-nav-img"></a></li>
+	  <li class="layui-nav-item"><a href="mailto:859175486@qq.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/pixcati/JSproxy_php@master/assets/ico/qq_mail.png" class="layui-nav-img"></a></li>
+	  <li class="layui-nav-item"><a id="google"><img src="https://cdn.jsdelivr.net/gh/pixcati/JSproxy_php@master/assets/ico/google.png" class="layui-nav-img"></a></li>
+	  <li class="layui-nav-item"><a href="http://vid.svvme.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/pixcati/JSproxy_php@master/assets/ico/videoder.png" class="layui-nav-img"></a></li>
+	  <div class="右下">
+		  <div id="time"></div>
+	  </div>
+</ul>
+	
+	</div>
+
+
+		<div class="layui-container">
+			<div class="layui-row">
+				<div class="layui-col-md12">
+					<h1 class="heading">盒子</h1>
+					
+					<div class="box">
+						<ul>
+						<li><a href="http://www.win98.xyz/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/media/ico/I6J2ar.png"><h3>我的收藏</h3><p>实用工具收集</p></a></li>
+						<li><a href="http://pan.svvme.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/media/ico/0YOzG.png"><h3>我的网盘</h3><p>临时自留地</p></a></li>
+						<li><a href="http://i.svvme.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/media/ico/I6JKrC.png"><h3>我的分享</h3><p>各类资源分享</p></a></li>
+						<li><a href="https://blog.svvme.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/pixcati/Myindex@main/media/ico/0YOzG.png"><h3>我的博客</h3><p>随便写点儿啥</p></a></li>
+						</ul>
+					</div>
+					
+
+</div>
+</div>
+</div>
+
+		<div id="底部">
+				<div id="row">
+						<div id="play">
+									<meting-js auto="https://music.163.com/#/my/m/music/playlist?id=6880047697" autoplay="false" order="random" list-folded	="true"></meting-js>
+						</div>
+						<a href="https://blog.svvme.com" target="_blank" style="background-color: rgba(144,144,255,.15);color: #9090ff">博客</a>
+						<a href="mailto:859175486@qq.com" target="_blank" style="background-color: rgba(255,78,106,.15);color: #ff4e6a">电邮</a>
+						<a href="./x.php" target="_blank" style="background-color: rgba(255,118,30,.15);color: #ff761e">状态</a>
+						<a href="#" target="_blank" style="background-color: rgba(255,185,0,.15);color: #ffb900">简书</a>
+						<a href="#" target="_blank" style="background-color: rgba(0,219,255,.15);color:#00dbff ">知乎</a>
+						<a href="#" target="_blank" style="background-color: rgba(51,213,122,.15);color: #33d57a">B站</a>
+						<a href="https://wpa.qq.com/msgrd?v=3&uin=859175486&site=qq&menu=yes" target="_blank" style="background-color: rgba(0,219,255,.15);color: #00dbff">QQ</a>
+						<br>
+						<a href="https://github.com/pixcati/Myindex" title="Backup" target="_blank" style="background-color: #3f4b4e;color: #dff4e9;"><i class="fa fa-github" style="padding-right: 5px;"></i>Made with ❤ by Pixcat </a>
+					</div>
+				</div>
+				
+
+		<!-- 播放器 -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DIYgod/APlayer@master/dist/APlayer.min.css">
+		<script src="https://cdn.jsdelivr.net/gh/DIYgod/APlayer@master/dist/APlayer.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
+		<!-- api -->
+		<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+		
+		<!-- jquery -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.jsdelivr.net/gh/pixcati/vidbg@1.1.1/dist/vidbg.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<!-- 点击特效 -->
+		<script src="https://cdn.jsdelivr.net/gh/pixcati/hexo@main/cdn/js/texiao01.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			// 移除遮罩
+			if(typeof Pace != 'undefined'){
+				Pace.on('hide', function(){
+					$("#遮罩").fadeOut(500,function(){
+						$(this).remove();
+					});
+				});
+			}
+		
+		$('#wechat').on('click', function(){
+			 // layer弹出层
+			layer.open({
+			  type: 2,
+			  title: '找我',
+			  shadeClose: true,
+			  shade: false,
+			  maxmin: true, 
+			  area: ['100%', '80%'],
+			  content: './about.html'
+			});
+		  });
+		  
+		  $('#google').on('click', function(){
+			 // layer弹出层
+			layer.open({
+			  type: 2,
+			  title: '谷歌',
+			  shadeClose: true,
+			  shade: false,
+			  maxmin: true, 
+			  area: ['100%', '80%'],
+			  content: './ppp/index2.html'
+			});
+		  });
+		  
+		  
+		function time() {
+			// 显示日期
+			var date = new Date();
+			var year = date.getFullYear();
+			var mouth = date.getMonth() + 1;
+			var day = date.getDate();
+			var str = '周' + '日一二三四五六'.charAt(new Date().getDay());
+			var nowDate = year + "年" + mouth + "月" + day + "日" + " " + str;
+			return nowDate;
+		}
+			var tmp = time();
+			document.getElementById('time').innerHTML = tmp;
+
+		  
+		</script>
+		
+		
+	</body>
+</html>
